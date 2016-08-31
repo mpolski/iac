@@ -10,4 +10,4 @@ AUTH=`curl -s -k -H "Content-Type: application/json" -d '{"userName":"'$USER'","
 
 echo $AUTH
  
-curl -s -k -H "Content-Type: application/json" -H "Auth: $AUTH" -H "X-Api-Version: 300" -d @$4 -X POST $URL/rest/server-profiles 
+curl -s -k -H "Content-Type: application/json" -H "Auth: $AUTH" -H "X-Api-Version: 300" -d @$JSONFILE -X POST $URL/rest/server-profiles 
