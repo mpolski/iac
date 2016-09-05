@@ -26,6 +26,6 @@ if [ "$SPNAME" == "$EXTPROFNAME" ];
    echo "`/bin/sh ./push2ov.sh $PROFILE`";
  else
    echo "Pushing profile $EXTPROFNAME to HPE OneView"
-   echo "`/bin/sh ./push2ov.sh $PROFILE`";
+   echo "`/bin/sh ./push2ov.sh $SERVER $USER $PASS $PROFILE`";
 fi
 
