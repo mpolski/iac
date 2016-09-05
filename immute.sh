@@ -22,10 +22,11 @@ if [ "$SPNAME" == "$EXTPROFNAME" ];
    echo "Destroying profile $EXTPROFNAME"
    echo "`/bin/sh ./removeServProf.sh $PROFILE`";
    echo "`sleep 65`"
-   echo "Pushing updated profile $EXTPROFNAME to HPE OneView"
-   echo "`/bin/sh ./push2ov.sh $PROFILE`";
+#   echo "Pushing updated profile $EXTPROFNAME to HPE OneView"
+#   echo "`/bin/sh ./push2ov.sh $PROFILE`";
  else
-   echo "Pushing profile $EXTPROFNAME to HPE OneView"
-   echo "`/bin/sh ./push2ov.sh $SERVER $USER $PASS $PROFILE`";
+#   echo "Pushing profile $EXTPROFNAME to HPE OneView"
+#   echo "`/bin/sh ./push2ov.sh $SERVER $USER $PASS $PROFILE`";
+   echo "Nothing to destroy, provisioning infrastructure";
 fi
 
