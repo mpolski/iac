@@ -23,9 +23,9 @@ if [ "$SPNAME" == "$EXTPROFNAME" ];
    echo "`/bin/sh ./removeServProf.sh $PROFILE`";
    echo "`sleep 65`"
    echo "Pushing profile $EXTPROFNAME to HPE OneView"
-   echo "`/bin/sh ./push2ov_i.sh $PROFILE`";
+   echo "`/bin/sh ./push2ov.sh $PROFILE`";
  else
    echo "Pushing profile $EXTPROFNAME to HPE OneView"
-   echo "`/bin/sh ./push2ov_i.sh $PROFILE`";
+   echo "`/bin/sh ./push2ov.sh $PROFILE`";
 fi
 
