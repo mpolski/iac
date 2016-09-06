@@ -2,7 +2,6 @@
 "type":"ServerProfileV6",
 "name":"WebServ-06",
 "description":"created from file v0.81",
-"serverHardwareUri": "/rest/server-hardware/30303437-3034-4D32-3230-313131384752",
 "serverHardwareTypeUri": "/rest/server-hardware-types/3B16C6A9-D517-4295-9E17-101A83C745B4",
 "enclosureGroupUri":"/rest/enclosure-groups/f6707a13-4464-4af2-a46a-c7e24ccf77c5",
 "enclosureUri": "/rest/enclosures/0000000000A66101",
