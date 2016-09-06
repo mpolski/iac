@@ -1,3 +1,1 @@
-# iac 
-# just a change
-# added push2ov.sh and modified slave's config
+# having fun with HPE OneView API 
