@@ -1,10 +1,41 @@
 {
 "type":"ServerProfileV6",
 "name":"WebServ-05",
-"description":"empty profile v0.2",
+"description":"created from file v0.84",
 "serverHardwareUri": "/rest/server-hardware/30303437-3034-4D32-3230-313130304752",
-"serverHardwareTypeUri":"/rest/server-hardware-types/0BEF122A-6ADE-4E72-9023-50F23DF37E0D",
+"serverHardwareTypeUri": "/rest/server-hardware-types/0BEF122A-6ADE-4E72-9023-50F23DF37E0D",
 "enclosureGroupUri":"/rest/enclosure-groups/f6707a13-4464-4af2-a46a-c7e24ccf77c5",
 "enclosureUri": "/rest/enclosures/0000000000A66101",
-"enclosureBay": 5
+"enclosureBay": 5,
+
+            "localStorage":
+            {
+                "controllers":
+                [
+                    {
+                        "deviceSlot": "Embedded",
+                        "mode": "RAID",
+                        "initialize": false,
+                        "importConfiguration": false,
+                        "logicalDrives":
+                        [
+                            {
+                                "name": "DAS",
+                                "raidLevel": "RAID1",
+                                "bootable": false,
+                                "numPhysicalDrives": 2,
+                                "driveTechnology": null,
+                                "sasLogicalJBODId": null
+                            }
+                        ]
+                    },
+                    {
+                        "deviceSlot": "Mezz 1",
+                        "mode": "RAID",
+                        "initialize": false,
+                        "importConfiguration": false,
+                        "logicalDrives": null
+                    }
+                ]
+            }
 }
