@@ -1,7 +1,7 @@
 {
 "type":"ServerProfileV6",
 "name":"WebServ-05",
-"description":"Compute with enhanced DAS v4.00",
+"description":"Compute with local DAS v2.00",
 "serverHardwareUri": "/rest/server-hardware/30303437-3034-4D32-3230-313130304752",
 "serverHardwareTypeUri": "/rest/server-hardware-types/0BEF122A-6ADE-4E72-9023-50F23DF37E0D",
 "enclosureGroupUri":"/rest/enclosure-groups/f6707a13-4464-4af2-a46a-c7e24ccf77c5",
@@ -10,18 +10,6 @@
 
             "localStorage":
             {
-                "sasLogicalJBODs":
-                [
-                    {
-                        "id": 1,
-                        "deviceSlot": "Mezz 1",
-                        "name": "4x2TBR5",
-                        "numPhysicalDrives": 4,
-                        "driveMinSizeGB": 2048,
-                        "driveMaxSizeGB": 2048,
-                        "driveTechnology": "SataHdd"
-                    }
-                ],
                 "controllers":
                 [
                     {
@@ -38,23 +26,6 @@
                                 "numPhysicalDrives": 2,
                                 "driveTechnology": null,
                                 "sasLogicalJBODId": null
-                            }
-                        ]
-                    },
-                    {
-                        "deviceSlot": "Mezz 1",
-                        "mode": "RAID",
-                        "initialize": false,
-                        "importConfiguration": false,
-                        "logicalDrives": 
-                        [
-                            {
-                                "name": null,
-                                "raidLevel": "RAID5",
-                                "bootable": false,
-                                "numPhysicalDrives": null,
-                                "driveTechnology": null,
-                                "sasLogicalJBODId": 1 
                             }
                         ]
                     }
