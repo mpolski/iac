@@ -6,7 +6,7 @@ PASS=$3
 JSONFILE=$4
 URL="https://$SERVER"
 
-AUTH=`curl -s -k -H "Content-Type: application/json" -d '{"userName":"'$USER'","password":"'$PASS'"}' POST $URL/rest/login-sessions | jq -r .sessionID`
+AUTH=`curl -s -k -H "Content-Type: application/json" -d '{"userName":"'$USER'","password":"'$PASS'","loginMsgAck":"true"}' POST $URL/rest/login-sessions | jq -r .sessionID`
 
 echo $AUTH
  

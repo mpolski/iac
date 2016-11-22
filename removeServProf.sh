@@ -1,13 +1,13 @@
 #!/bin/bash
 
-SERVER=192.85.181.199
+SERVER=192.168.78.10
 USER=Administrator
 PASS=passw0rd
 JSONFILE=$1
 EXTPROFNAME=`cat WebServ-5.json | jq -r .name`
 URL="https://$SERVER"
 
-AUTH=`curl -s -k -H "Content-Type: application/json" -d '{"userName":"'$USER'","password":"'$PASS'"}' POST $URL/rest/login-sessions | jq -r .sessionID`
+AUTH=`curl -s -k -H "Content-Type: application/json" -d '{"userName":"'$USER'","password":"'$PASS'","loginMsgAck":"true"}' POST $URL/rest/login-sessions | jq -r .sessionID`
 
 echo $AUTH
 echo "Trying to remove "$EXTPROFNAME  
