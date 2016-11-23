@@ -1,6 +1,6 @@
 {
 "type":"ServerProfileV6",
-"name":"TestServ01",
+"name":"WebServ-05",
 "description":"Compute with a local boot volume",
 "serverHardwareUri": "/rest/server-hardware/30303437-3034-4D32-3230-313130304752",
 "serverHardwareTypeUri": "/rest/server-hardware-types/8761242E-2519-446A-8ACE-5BA01A016FEF",
