@@ -1,8 +1,4 @@
 {
-    "type": "ServerProfileListV6",
-    "members":
-    [
-{
 "type":"ServerProfileV6",
 "name":"WebServ-05",
 "description":"Compute with boot volume and data volume",
@@ -71,6 +67,3 @@
         ]
       }
     }
-  ]
-}
-
