@@ -8,26 +8,34 @@
 "enclosureUri": "/rest/enclosures/0000000000A66101",
 "enclosureBay": 5,
 
+
  "localStorage": {
         "sasLogicalJBODs": [
           {
+            "id": 2,
             "deviceSlot": "Mezz 1",
             "name": "Boot",
             "numPhysicalDrives": 2,
             "driveMinSizeGB": 800,
             "driveMaxSizeGB": 800,
-            "driveTechnology": "SasSsd",
-            "status": "OK"
+            "driveTechnology": "SasSsd"
           }
         ],
         "controllers": [
           {
             "deviceSlot": "Mezz 1",
             "mode": "RAID",
+            "initialize": false,
+            "importConfiguration": false,
             "logicalDrives": [
               {
+                "name": null,
                 "raidLevel": "RAID1",
-                "sasLogicalJBODId": 2
+                "bootable": false,
+                "numPhysicalDrives": null,
+                "driveTechnology": null,
+                "sasLogicalJBODId": 2,
+                "driveNumber": null
               }
             ]
           }
