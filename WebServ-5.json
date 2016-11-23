@@ -1,52 +1,36 @@
 {
 "type":"ServerProfileV6",
 "name":"TestServ01",
-"description":"Compute with a local boot volume",
+"description":"Empty Compute profile",
 "serverHardwareUri": "/rest/server-hardware/30303437-3034-4D32-3230-313130304752",
 "serverHardwareTypeUri": "/rest/server-hardware-types/8761242E-2519-446A-8ACE-5BA01A016FEF",
 "enclosureGroupUri": "/rest/enclosure-groups/5f7fa6af-475f-41dc-93f5-d69b7a02d5e8",
 "enclosureUri": "/rest/enclosures/0000000000A66101",
 "enclosureBay": 5,
 
-
-"boot": {
-        "order": [
-          "HardDisk"
-        ],
-        "manageBoot": true
-      },
-            
-"localStorage": {
+ "localStorage": {
         "sasLogicalJBODs": [
           {
-            "id": 1,
             "deviceSlot": "Mezz 1",
-            "name": "SysVol1R1",
+            "name": "Boot",
             "numPhysicalDrives": 2,
-            "driveMinSizeGB": 600,
-            "driveMaxSizeGB": 600,
-            "driveTechnology": "SasHdd"
+            "driveMinSizeGB": 800,
+            "driveMaxSizeGB": 800,
+            "driveTechnology": "SasSsd",
+            "status": "OK"
           }
         ],
-	"controllers": [
+        "controllers": [
           {
             "deviceSlot": "Mezz 1",
             "mode": "RAID",
-            "initialize": false,
-            "importConfiguration": false,
             "logicalDrives": [
               {
-                "name": null,
                 "raidLevel": "RAID1",
-                "bootable": true,
-                "numPhysicalDrives": null,
-                "driveTechnology": null,
-                "sasLogicalJBODId": 1,
-                "driveNumber": 1
+                "sasLogicalJBODId": 2
               }
             ]
           }
         ]
      }
 }
-
