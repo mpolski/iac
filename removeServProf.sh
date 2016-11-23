@@ -11,4 +11,4 @@ AUTH=`curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -d 
 
 echo $AUTH
 echo "Trying to remove "$EXTPROFNAME  
-curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -H "Auth: $AUTH" -H "X-Api-Version: 300" -X DELETE $URL/rest/server-profiles?filter=name="'$EXTPROFNAME'"
+curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -H "Auth: $AUTH" -X DELETE $URL/rest/server-profiles?filter=name="'$EXTPROFNAME'"
