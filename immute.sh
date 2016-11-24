@@ -11,7 +11,7 @@ URL="https://$SERVER"
 #Authenticate to HPE OneView API
 AUTH=`curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -d '{"userName":"'$USER'","password":"'$PASS'","loginMsgAck":"true"}' POST $URL/rest/login-sessions | jq -r .sessionID`
 
-echo $AUTH
+#echo $AUTH
 
 #Gets the existing profile names (currently expected to work with 1 profile only) 
 SPNAME=`curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -H "Auth: $AUTH" -X GET $URL/rest/server-profiles | jq -r '.members | .[].name'`
