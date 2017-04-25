@@ -2,7 +2,7 @@
       "type": "ServerProfileTemplateV2",
       "uri": "/rest/server-profile-templates/c90551b0-4e79-41bb-a331-f705934bdb29",
       "name": "WebScaleApps-Template",
-      "description": "Template for Web Scale Applications v2.0",
+      "description": "Template for Web Scale Applications v2.1",
       "serverProfileDescription": "Web Scale Applications Server v1.0",
       "serverHardwareTypeUri": "/rest/server-hardware-types/F4D99384-7E0A-40F2-8B78-3D64BFD96080",
       "enclosureGroupUri": "/rest/enclosure-groups/9399bf3b-1b78-43a8-aa48-c60d2bba2946",
